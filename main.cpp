@@ -4,13 +4,12 @@
 
 using namespace std;
 
-#include "board.h"
+#include "game.h"
 
 int main() {
-    board b;
+    game g;
 
-    b.initializeBoard();
-    b.printBoard();
+    g.initializeGame();
 
     return 0;
 }

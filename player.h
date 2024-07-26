@@ -5,6 +5,12 @@ public:
     int playerX;
     int playerY;
 
+    player() {
+        playerX = 0;
+        playerY = 0;
+        playerID = 'o';
+    }
+
     int generateNum() {
         std::random_device dev;
         std::mt19937 rng(dev());
@@ -12,4 +18,12 @@ public:
 
         return dist6(rng);
     }
+
+    void initializePlayer(int value) {
+        playerX = generateNum();
+        playerY = generateNum();
+        playerID = char(value);
+    }
+
+
 };
